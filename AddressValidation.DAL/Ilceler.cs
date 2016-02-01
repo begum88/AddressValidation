@@ -19,7 +19,7 @@ namespace AddressValidation.DAL
             this.SemtMah = new HashSet<SemtMah>();
         }
     
-        public int ilceId { get; set; }
+        public string ilceId { get; set; }
         public int SehirId { get; set; }
         public string IlceAdi { get; set; }
         public string SehirAdi { get; set; }

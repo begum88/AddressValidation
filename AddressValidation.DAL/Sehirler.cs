@@ -24,10 +24,5 @@ namespace AddressValidation.DAL
         public int TelefonKodu { get; set; }
     
         public virtual ICollection<Ilceler> Ilceler { get; set; }
-
-        public static List<Sehirler> ToList()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -1,11 +1,15 @@
-﻿
+﻿@using System.Web.Mvc.Html
 @using AddressValidation.DAL
 @{
     ViewBag.Title = "Posta Kodunu Sorgulama ";
-   
+    List<Sehirler> sehirler = (List<Sehirler>) ViewBag.sehir;
+    List<Ilceler> ilceler = (List<Ilceler>)ViewBag.ilce;
+    List<SemtMah> semtMahs = (List<SemtMah>)ViewBag.semt;
+
+}
 
 
-<body style="background-image: url(http://www.new-method.com/new/website/background.jpg); ">
+body style="background-image: url(http://www.new-method.com/new/website/background.jpg); ">
 
 
 
@@ -19,7 +23,7 @@
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
     <div class="editor-field">
         @Html.DropDownList("sehir", "Select a Value")
-        
+        @Html.DropDownList("ılce", "Select a Value")
 
     </div>
 
